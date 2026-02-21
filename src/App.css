@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/Rubik.ttf");
+}
+
+
+@font-face {
+  font-family: "Nastaliq";
+  src: url("./assets/NotoNastaliqUrdu-Regular.ttf");
+}
+
+.login_bg {
+  background-image: url("./assets/h-wp-orange.jpg");
+  background-size: cover;
+
+
+}
+
+/* .no_scroll{
+    overflow-y: hidden;
+
+} */
+
+.logo_bg {
+  background-image: url("./assets/v-wp-orange.jpg");
+  background-size: cover;
+
+}
+
+/* Add animation for floating logo */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+/* Add to your global CSS or create a new CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+/* Prevent scroll on body */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Custom animation for logo */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Responsive captcha container */
+.captcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Fix for Arcaptcha responsiveness */
+arcaptcha-widget {
+  width: 100% !important;
+  max-width: 100% !important;
+  transform-origin: center !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Hide scrollbar but keep functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .captcha-container {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 480px) {
+  .captcha-container {
+    transform: scale(0.8);
+  }
+}
+/* متغیرهای CSS برای سایز سایدبار */
+:root {
+  --sidebar-width: 18rem; /* پیش‌فرض: باز */
+  --sidebar-collapsed-width: 5rem;
+  --transition-duration: 500ms;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* انیمیشن برای محتوای اصلی */
+main {
+  transition: margin-right var(--transition-duration) ease-in-out,
+              width var(--transition-duration) ease-in-out;
+  will-change: margin-right, width;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
