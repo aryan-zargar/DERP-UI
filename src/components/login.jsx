@@ -58,7 +58,7 @@ export default function Login() {
         try {
             setTimeout(() => { }, 1000)
             console.log("Logging in with:", { username, password })
-            await axios.post("http://192.168.5.50:8080/api/users/login", {
+            await axios.post("http://192.168.5.96:8080/api/users/login", {
                 Username: username,
                 Password: password
             })
