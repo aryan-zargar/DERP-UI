@@ -85,7 +85,6 @@ export default function Login() {
             className='min-h-screen flex flex-col lg:flex-row overflow-hidden' 
             style={{ fontFamily: "Rubik, sans-serif" }}
         >
-
             <div className='flex-1 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8 bg-gradient-to-br from-gray-50 to-gray-100 overflow-y-auto'>
                 <div className='w-full max-w-md'>
                     <div className='bg-white rounded-2xl shadow-2xl border border-orange-100 p-6 md:p-8 lg:p-10 transition-all duration-300 hover:shadow-2xl mx-2'>
@@ -101,9 +100,7 @@ export default function Login() {
                                 لطفا اطلاعات خود را به درستی وارد کنید
                             </p>
                         </div>
-                        
                         <form onSubmit={handleSubmit} className='space-y-4 md:space-y-6'>
-                            {/* Username Field */}
                             <div className='space-y-1 md:space-y-2'>
                                 <label
                                     htmlFor="username"
